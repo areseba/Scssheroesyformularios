@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="banner-top"><p class="txt-banner">Descuentos 20%</p></section>
+    <header class="header-top">
+        <img src="img/Logo1.png" alt="tienda">
+        <h1 class="titulo-principal">Nombre Tienda</h1>
+    </header>
+        <section class="contenedor-menu">
+            <nav class="menu">
+                <ul class="lista-menu">
+                    <li>
+                        <span>Contacto</span>
+                    </li>
+                    <li>
+                        <span>Registrarme</span>
+                    </li>
+                    <li>
+                        <span>Ingresar</span>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    <main>
+        <section >
+            <div class="formulario">
+            <h2 class="titulo">Añadi tu super!</h2>
+            <p class="subtitulo">Agrega tu personaje favorito completando las opciones</p>
+            <form action="">
+            <div class="cajaformulario">
+                <div class="caja">
+                    <label class="nombre" for="nombre">* Nombre</label>
+                        <input  class="nombreformulario" type="text" name="nombre" id="nombre" required placeholder="Sebastián Areellano">
+                    <label class="fecha" for="date">Fecha</label>
+                        <input class="date" type="date" name="date" id="date" value="2023-03-20" min="1950-01-01" required>
+                    <textarea  name="descripcion" id="descripcion" placeholder="Descripcion"></textarea>
+                </div>
+                <div class="caja">
+                    <label class="especie" for="especie">* Especie</label>
+                        <select class="especie-opcion" name="especie" id="especie">
+                                <option value="hombre">Alienigena</option>
+                                <option value="mujer">Humano</option>
+                        </select>
+                        <label  class="foto" for="imagen">Agregar Foto</label>
+                            <input class="foto-opcion" type="file" name="imagen" id="imagen" accept=".jpeg, .png, .pdf"/>
+                        <div>
+                            <label class="poderes" for="poder">Poderes</label>
+                            <label for="volar" class="espacio">
+                                <input class="checkbox" type="checkbox" name="poderes" id="volar">Volar
+                            </label>
+                            <label for="superinteligencia" class="espacio">
+                                <input class="checkbox" type="checkbox" name="poderes" id="superinteligencia">Superinteligencia
+                            </label>
+                            <label for="laser" class="espacio">
+                                <input class="checkbox" type="checkbox" name="poderes" id="laser">Vista de rayo láser
+                            </label>
+                            <label for="billetera" class="espacio">
+                                <input class="checkbox" type="checkbox" name="poderes" id="billetera">Billetera gorda
+                            </label>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="personaje">Tipo de personaje</label>
+                            <label for="heroe" class="espacio"> 
+                                <input class="option" type="radio" name="tipo" id="heroe"> Héroe / Heroína</label>
+                            <label for="villano" class="espacio">
+                                <input class="option" type="radio" name="tipo" id="villano"> Villano / Villana</label>
+                        </div>
+                </div>
+            </div>
+                <div class="caja-boton">
+                <button class="añadir" type="submit">Añadir</button>
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer class="pie">
+        <p class="txt-final">Todos los derechos reservados a FRONT END 1</p>
+    </footer> 
+</body>
+</html>
